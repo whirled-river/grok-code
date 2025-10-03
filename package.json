@@ -1,0 +1,49 @@
+{
+  "name": "grok-code",
+  "version": "1.0.0",
+  "description": "Terminal based agentic coder for Grok",
+  "main": "index.ts",
+  "scripts": {
+    "dev": "bun run index.ts",
+    "build": "bun build.ts",
+    "compile": "bun build --compile --target bun index.ts",
+    "prepublishOnly": "bun run compile",
+    "start": "bun run index.ts",
+    "install": "bun install",
+    "test": "bun test",
+    "setup": "bun run start setup"
+  },
+  "bin": {
+    "grok-code": "./index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whirled-river/grok-code.git"
+  },
+  "keywords": [
+    "Grok",
+    "Claude",
+    "Code",
+    "AI",
+    "Agentic",
+    "Terminal"
+  ],
+  "author": "whirled-pool",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/whirled-river/grok-code/issues"
+  },
+  "homepage": "https://github.com/whirled-river/grok-code#readme",
+  "devDependencies": {
+    "@types/react": "^19.2.0"
+  },
+  "dependencies": {
+    "axios": "^1.12.2",
+    "commander": "^14.0.1",
+    "ink": "^6.3.1",
+    "ink-select-input": "^6.2.0",
+    "ink-text-input": "^6.0.0",
+    "react": "^19.2.0",
+    "yoga-layout": "^3.2.1"
+  }
+}
